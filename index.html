@@ -25,7 +25,43 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
+<style>
+            .preview-section {
+            background: white;
+            /* border: 2px solid #dee2e6; */
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        .preview-label {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        /* Placeholder for the actual image */
+        .placeholder-img {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .placeholder-img:hover {
+            transform: scale(1.02);
+        }
+    </style>
 
+</style>
 <body>
 
     <!-- pre loader area start -->
@@ -509,11 +545,18 @@
       <p>If you believe you have been affected, please report the matter to <strong>E-Crime</strong> or to the appropriate authorities.</p>
     </div>
   </div>
-  <div class="row mt-4">
-    <div class="col text-center">
-      <a download="Abbys-of-hope" href="./assets/img/abbys-of-hope.png" target="_blank"><img src="./assets/img/abbys-of-hope.png" alt="Book Image" class="img-fluid" style="max-height: 300px;"></a>
-    </div>
-  </div>
+  <div class="preview-section">
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <h2 class="mb-1">Abbys of Hope</h2>
+                    <p class="text-muted mb-3">Click to download</p>
+                    <a download="Abbys-of-hope" href="#" target="_blank">
+                        <div class="placeholder-img img-fluid mx-auto" style="max-height: 300px; width: 200px; height: 300px;"><img src="./assets/img/abbys-of-hope.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
 </div>
         <!-- feature area start -->
         <div id="feature-one-page" class="tp-feature-area pt-130 pb-110 p-relative z-index grey-bg-2">
